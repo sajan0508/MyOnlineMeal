@@ -1,0 +1,298 @@
+/* CSS RESET  */
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS VARIABLE */
+:root{
+    --navbar-height: 5.4rem;
+}
+
+/* NAVIGATION BAR  */
+#navbar{
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    font-family: 'Baloo Bhai', cursive;
+    width: 100%;
+    /* justify-content: center; */
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+/* Navigation Bar: Logo and Image  */
+#navbar #logo{ 
+    margin: -0.9rem 0rem -1.8rem -1.7rem;
+}
+
+#navbar #logo img{
+    height: 5.5rem;
+    width: 5.5rem;
+    margin: 0rem 1rem;
+}
+
+
+/* Navigation Bar: List Styling */
+
+#navbar ul{
+    display: flex;
+    
+}
+#navbar ul li{
+    list-style: none;
+    
+    /* color: white; */
+    font-size: 1.5rem;
+}
+#navbar ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: medium;
+    display: block;
+    padding: 0rem 1.5rem;
+    margin: 0rem 2.8rem;
+    border-radius: 2.0rem;
+    
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* HOME SECTION */
+#home{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 39.0rem;
+    /* padding: .5rem 4.5rem; */
+    /* margin: 0rem 0rem 9.0rem 0rem; */
+    align-items: center;
+    justify-content: center ; 
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url('../img/bg1.jpg') no-repeat center center/cover;
+    height: 45.5rem;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+    ;
+}
+
+/* Services Section  */
+
+#services-container{
+    background-color: #98a2ac;
+    height: 38rem;
+}
+#services{
+    display: flex; 
+    position: absolute;
+    margin: .5rem 2.0rem;
+}
+
+#services-container .h-primary{
+    padding-top: .1rem;
+}
+#services .box{
+    border: .2rem solid brown;
+    padding: 1.4rem 1.4rem;
+    margin: 1.4rem 2.0rem;
+    border-radius: 3.0rem;
+    background-color: rgb(244, 238, 238);
+}
+
+#services .box p{
+    font-family: 'Bree Serif', serif;
+    font-size: 0.8rem;
+}
+#services .box img{
+    display: block;
+    margin: auto;
+    height: 10.0rem;
+}
+
+
+/* Client Section  */
+#clients{
+    height: 24.5rem;
+}
+#clients::before{
+    content: "";
+    background:url('../img/bg2.jpg') no-repeat center center/cover;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.3;
+    width: 100%;
+    height: 24.5rem;
+}
+#clients .h-primary{
+    color: black;
+}
+#clients-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 0rem 3.4rem; */
+}
+.client-item{
+    padding: 0rem .54rem;
+}
+#clients img{
+    height: 9.5rem;
+    padding: 2rem;
+    margin: -4rem 2rem;
+}
+#img1{
+padding-bottom: 1.0rem;
+}
+#img2{
+    padding-top: 3.4rem;
+}
+#img3{
+    padding-top: 4.4rem;
+}
+#img4{
+    padding-top: 2.3rem;
+}
+
+
+/* Contact Section  */
+#contact{
+    position: relative;
+}
+#contact .h-primary{
+    color: black;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    background: url('../img/contact.jpg') no-repeat center center/cover
+    ;
+}
+.contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3.8rem;
+}
+.contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+}
+.contact-box input , .contact-box textarea{
+    width: 100%;
+    padding: 0.2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 0.6rem;
+    font-size: 0.9rem;
+}
+.contact-box form{
+    width: 40%;
+}
+
+
+/* Footer Section  */
+footer{
+    height: 2rem;
+    background-color: rgb(18, 17, 17);
+    color: white;
+    /* padding: .6rem 2.0rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Utility Classes */
+.h-primary{
+    font-size: 3.8rem;
+    font-family: 'Bree Serif', serif;
+    padding: 1.2rem;
+    color: white ;
+    text-align: center;
+    
+}
+
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+    font-size: 2.3rem;
+    padding: 1.2rem;
+}
+
+#home p{
+    font-family: 'Bree Serif', serif;
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+}
+#btn{
+    padding: .5rem 1.0rem;
+    margin: 2.0rem auto;
+    border: .2rem solid white;
+    background-color: rgb(82, 58, 27);
+    border-radius: 1.0rem;
+    color: white;
+    cursor: pointer;
+    font-size: 1.9rem;
+}
+#btn:hover{
+    border: .2rem solid brown;
+    background-color: white;
+    color:  rgb(82, 58, 27);
+}
+.text-center{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* body{
+    /* background-image : url('https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); */
+    /* background-image : url('https://cdn.pixabay.com/photo/2016/12/26/17/28/spaghetti-1932466_960_720.jpg'); */
+    /* background-image : url('https://cdn.pixabay.com/photo/2019/05/10/13/28/contact-us-4193523_960_720.jpg'); */
+    /* background-image : url('http://www.pngimagesfree.com/LOGO/Z/Zomato/Zomato-Logo-Vector.png'); */
+    /* background-image : url('https://e7.pngegg.com/pngimages/570/786/png-clipart-four-slice-of-assorted-pizza-pizza-hut-poster-dough-four-pizza-food-recipe-thumbnail.png'); */
+/* } */
